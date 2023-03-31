@@ -20,7 +20,7 @@
 	$(document).ready(function() {
 		$("#rulesection").show();
 		$("#loginsection").hide();
-		$("#registersection").hide();
+		$("#registersection").hide();	
 		
 		$("#ruleid").click(function() {
 			$("#rulesection").show();
@@ -43,10 +43,10 @@
   <body>
   	<div class="content">
   		<div class="left" style="background-image: url('image//img.jpeg');">
-      		<h1 class="matdaan">Matdaan !</h1>
+      		<h1 class="matdaan"><b>Matdaan !</b></h1>
       		<p>Young or Old, Black or White, Cast your Vote, Its your right.</p>
       		<a class="btn btn-danger display-4" href="#"><span id="loginid">Login</span></a>
-      		<a class="btn btn-danger display-4 regbtn" href="#"><span id="registerid">Register</span></a>
+      		<a class="display-4" href="#"><span id="registerid">Register</span></a>
 			<button id="ruleid">Rules</button>
 			
 		</div>
@@ -65,7 +65,7 @@
 						card number and the account address which the user will be using
 						for voting purpose.
 				</p>
-				<p><strong>4. </strong>At the first stage the user’s age will be checked. If the
+				<p><strong>4. </strong>At the first stage the users age will be checked. If the
 						user is 18 or above 18 years of age then only he is eligible to
 						vote.
 				</p>
@@ -79,83 +79,60 @@
 				
 			</section>
 
-			<section class="vh-100 gradient-custom" id="loginsection">
-				<div class="container py-5 h-100">
-					<div
-						class="row d-flex justify-content-center align-items-center h-100">
-						<div class="col-12 col-md-8 col-lg-6 col-xl-5">
-							<div class="card bg-dark text-white" style="border-radius: 1rem;">
-								<div class="card-body p-5 text-center">
-
-									<div class="mb-md-5 mt-md-4 pb-5">
-
-										<h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-										<p class="text-white-50 mb-5">Please enter your login and
-											password!</p>
-
-										<div class="form-outline form-white mb-4">
-											<input type="email" id="typeEmailX"
-												class="form-control form-control-lg" /> <label
-												class="form-label" for="typeEmailX">Email</label>
-										</div>
-
-										<div class="form-outline form-white mb-4">
-											<input type="password" id="typePasswordX"
-												class="form-control form-control-lg" /> <label
-												class="form-label" for="typePasswordX">Password</label>
-										</div>
-
-										<p class="small mb-5 pb-lg-2">
-											<a class="text-white-50" href="#!">Forgot password?</a>
-										</p>
-
-										<button class="btn btn-outline-light btn-lg px-5"
-											type="submit">Login</button>
-
-										<div
-											class="d-flex justify-content-center text-center mt-4 pt-1">
-											<a href="#!" class="text-white"><i
-												class="fab fa-facebook-f fa-lg"></i></a> <a href="#!"
-												class="text-white"><i
-												class="fab fa-twitter fa-lg mx-4 px-2"></i></a> <a href="#!"
-												class="text-white"><i class="fab fa-google fa-lg"></i></a>
-										</div>
-
-									</div>
-
-									<div>
-										<p class="mb-0">
-											Don't have an account? <a href="#!"
-												class="text-white-50 fw-bold">Sign Up</a>
-										</p>
-									</div>
-
-								</div>
+			<section id="loginsection">
+				<div class="container">
+					<br> <br> <br>
+					<div class="login-form">
+						<div class="main-div">
+							<div class="panel">
+								<h3>Please enter your Voter ID</h3>
 							</div>
+							<form id="Login">
+								<div class="form-group">
+									<input type="text" class="form-control" id="inputid" placeholder="Voter ID">
+								</div>
+								<!-- <div class="form-group">
+									<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+								</div> -->
+								<button type="submit" class="btn btn-primary">Login</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="registersection"></section>
+			<section id="registersection">
+				<div class="container">
+					<br> <br> <br>
+					<div class="login-form">
+						<div class="main-div">
+							<div class="panel">
+								<h3>Please enter your Voter ID</h3>
+							</div>
+							<form id="Login">
+								<div class="form-group">
+									<input type="text" class="form-control" id="inputname" placeholder="Full Name" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="inputmobile" placeholder="Email ID (Optional)">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="inputmobile" placeholder="Mobile Number" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="inputid" placeholder="Voter ID" required>
+								</div>
+								<div class="form-group">
+									<input type="date" class="date" id="inputdate" placeholder="mm-dd-yyyy">
+								</div>
+								<button type="submit" class="btn btn-primary">Register</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
   	</div>
-  	
-  	
-
-
-		<!-- <div class="p1">
-			<p>
-				<b>"Elections belong to the people.It's their decision. <br>&nbsp
-					If they decide to turn their back on the fire and <br>&nbsp
-					burn their behinds,then they will just have to sit <br>&nbsp
-					on their blisters."
-				</b>
-			</p>
-		</div>
-		<div class="btn">
-			<a class="btn btn-danger display-4" href="login.jsp">Vote Now !</a>
-		</div> -->
 
 
 	<!-- Optional JavaScript -->

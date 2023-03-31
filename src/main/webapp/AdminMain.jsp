@@ -21,9 +21,9 @@
   <link href="css//swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
-  <style type="text/css">
+  <%-- <style type="text/css">
   		<%@include file="css//style.css"%>
-  </style>
+  </style> --%>
   
   <script src="https://kit.fontawesome.com/796f2bca92.js" crossorigin="anonymous"></script>
   

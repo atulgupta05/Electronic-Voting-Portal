@@ -31,9 +31,33 @@
   <link href="css//swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="css//style.css" rel="stylesheet">
+  <link href="css//main.css" rel="stylesheet">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <script>
+	$(document).ready(function() {
+		$("#rulesection").show();
+		$("#loginsection").hide();
+		$("#registersection").hide();	
+		
+		$("#ruleid").click(function() {
+			$("#rulesection").show();
+			$("#loginsection").hide();
+			$("#registersection").hide();
+		});
+		$("#loginid").click(function() {
+			$("#rulesection").hide();
+			$("#loginsection").show();
+			$("#registersection").hide();
+		});
+		$("#registerid").click(function() {
+			$("#rulesection").hide();
+			$("#loginsection").hide();
+			$("#registersection").show();
+		});
+	});
+</script>
   
 </head>
 
@@ -53,9 +77,9 @@
 			<nav id="navbar" class="navbar">
 				<ul>
 					<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-					<li><a class="nav-link scrollto" href="#about">Add Candidate</a></li>
+					<li><a class="nav-link scrollto" href="#"><span id="candidateid">Add Candidate</span></a></li>
 					<li><a class="nav-link scrollto" href="#services">Verify Voters</a></li>
-					<li><a class="nav-link scrollto " href="#portfolio">Result</a></li>
+					<li><a class="nav-link scrollto" href="#portfolio">Result</a></li>
 				</ul>
 				<i class="bi bi-list mobile-nav-toggle"></i>
 			</nav>
@@ -184,8 +208,35 @@
       </div>
     </section>
 
+	<!-- ---------------------------------- Add Candidate -------------------------------------------- -->
 
-
+	<section class="addcandiadate">
+		<div class="container">
+			<div class="section-title" data-aos="zoom-out">
+				<h2>hhh</h2>
+				<p>Add Candidate</p>
+			</div>
+			<div class="row content" data-aos="fade-up">
+          <div class="col-lg-6">
+            <img alt="" src="image//election.png">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+					<form id="canReg">
+						<div class="can-group">
+							<input type="text" class="can-control" id="nameinput" placeholder="Your Name - Father Name - Family Name">
+						</div>
+						<div class="can-group">
+							<input type="date" class="can-control" id="dateinput" placeholder="Date Of Birth">
+						</div>
+						<div class="can-group">
+							<input type="text" class="can-control" id="nameinput" placeholder="Your Name - Father Name - Family Name">
+						</div>
+						<button type="submit" class="btn btn-primary">Login</button>
+					</form>
+				</div>
+			</div>
+        </div>
+	</section>
 
 
 
